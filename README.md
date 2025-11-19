@@ -178,4 +178,4 @@ security-dashboard/
 
 - Open a Pull Request
 
-# Reported by: Ehmaan Shafqat
+# Author: Ehmaan Shafqat
