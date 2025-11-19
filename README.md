@@ -47,27 +47,39 @@ A comprehensive full-stack security application that aggregates threat intellige
 ```bash
 git clone https://github.com/yourusername/security-dashboard.git
 cd security-dashboard
-2. **Backend Setup**
+## 🚀 Backend Setup
+
+## 🚀 Quick Start
+
+### Backend Setup
 
 ```bash
 cd backend
 python -m venv venv
-```bash
+Activate Virtual Environment:
+bash
+Copy code
 # Windows
 venv\Scripts\activate
+
 # macOS/Linux
 source venv/bin/activate
-```bash
+Install dependencies:
+bash
+Copy code
 pip install -r requirements.txt
-```bash
-# Create environment file
+Create environment file and add API keys:
+bash
+Copy code
 cp .env.example .env
 # Edit .env with your API keys
-```bash
+Run backend:
+bash
+Copy code
 python app.py
-3. **Frontend Setup**
-
-```bash
+Frontend Setup
+bash
+Copy code
 cd ../frontend
 npm install
 npm start
@@ -77,15 +89,17 @@ Frontend: http://localhost:3000
 
 Backend API: http://localhost:5000
 
-⚙️ **Configuration**
+⚙️ Configuration
 Environment Variables (.env)
 env
+Copy code
 ABUSEIPDB_API_KEY=your_abuseipdb_api_key
 SHODAN_API_KEY=your_shodan_api_key
 VIRUSTOTAL_API_KEY=your_virustotal_api_key
 ALIENVAULT_API_KEY=your_alienvault_api_key
 JWT_SECRET=your_jwt_secret_key
-API Keys Required
+API Keys Required:
+
 AbuseIPDB
 
 Shodan
@@ -94,36 +108,38 @@ VirusTotal
 
 AlienVault OTX
 
-🎯 **Usage**
-1. Log Analysis
+🎯 Usage
+Log Analysis
 Upload security log files (.log, .txt)
 
 View real-time processing progress
 
 Analyze correlated threats in interactive tables
 
-2. IP Reputation Check
+IP Reputation Check
 Enter IP address for comprehensive analysis
 
 View multi-source threat assessment
 
 Access detailed intelligence data
 
-3. Real-time Dashboard
+Real-time Dashboard
 Monitor live threat feed
 
 View severity distribution charts
 
 Generate PDF reports
 
-4. Reporting
+Reporting
 Generate security assessment reports
 
 Export IP reputation analysis
 
 Download professional PDF documents
 
-📁 **Project Structure**
+📁 Project Structure
+csharp
+Copy code
 security-dashboard/
 ├── backend/
 │   ├── app.py                 # Main Flask application
@@ -146,7 +162,7 @@ security-dashboard/
     │       └── api.js         # API service layer
     ├── public/
     └── package.json           # Node.js dependencies
-🔌 **API Endpoints**
+🔌 API Endpoints
 Endpoint	Method	Description
 /api/login	POST	Generate JWT token
 /api/check-ip	POST	Basic IP reputation check
@@ -155,7 +171,8 @@ Endpoint	Method	Description
 /api/generate-security-report	POST	Generate PDF security report
 /api/generate-ip-report	POST	Generate PDF IP report
 /api/health	GET	System status check
-🤝 **Contributing**
+
+🤝 Contributing
 Fork the repository
 
 Create a feature branch: git checkout -b feature/amazing-feature
