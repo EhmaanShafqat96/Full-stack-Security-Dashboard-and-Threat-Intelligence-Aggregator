@@ -47,99 +47,91 @@ A comprehensive full-stack security application that aggregates threat intellige
 ```bash
 git clone https://github.com/yourusername/security-dashboard.git
 cd security-dashboard
-## 🚀 Backend Setup
+```
 
-## 🚀 Quick Start
 
 ### Backend Setup
 
 ```bash
 cd backend
 python -m venv venv
-Activate Virtual Environment:
-bash
-Copy code
+```
+### Activate Virtual Environment:
+```bash
 # Windows
 venv\Scripts\activate
-
 # macOS/Linux
 source venv/bin/activate
-Install dependencies:
-bash
-Copy code
+```
+### Install dependencies:
+```bash
 pip install -r requirements.txt
-Create environment file and add API keys:
-bash
-Copy code
+```
+### Create environment file and add API keys:
+```bash
 cp .env.example .env
 # Edit .env with your API keys
-Run backend:
-bash
-Copy code
+```
+### Run backend:
+```bash
 python app.py
-Frontend Setup
-bash
-Copy code
+```
+### Frontend Setup
+```bash
+
 cd ../frontend
 npm install
 npm start
-Access the application:
+```
+### Access the application:
 
 Frontend: http://localhost:3000
 
 Backend API: http://localhost:5000
 
-⚙️ Configuration
-Environment Variables (.env)
-env
-Copy code
+## ⚙️ Configuration
+### Environment Variables (.env)
+
 ABUSEIPDB_API_KEY=your_abuseipdb_api_key
+
 SHODAN_API_KEY=your_shodan_api_key
+
 VIRUSTOTAL_API_KEY=your_virustotal_api_key
+
 ALIENVAULT_API_KEY=your_alienvault_api_key
+
 JWT_SECRET=your_jwt_secret_key
-API Keys Required:
 
-AbuseIPDB
+### API Keys Required:
 
-Shodan
+- AbuseIPDB
+- Shodan
+- VirusTotal
+- AlienVault OTX
 
-VirusTotal
+## 🎯 Usage
+### Log Analysis
+- Upload security log files (.log, .txt)
+- View real-time processing progress
+- Analyze correlated threats in interactive tables
 
-AlienVault OTX
+### IP Reputation Check
+- Enter IP address for comprehensive analysis
+- View multi-source threat assessment
+- Access detailed intelligence data
 
-🎯 Usage
-Log Analysis
-Upload security log files (.log, .txt)
+### Real-time Dashboard
+- Monitor live threat feed
+- View severity distribution charts
+- Generate PDF reports
 
-View real-time processing progress
+### Reporting
+- Generate security assessment reports
+- Export IP reputation analysis
+- Download professional PDF documents
 
-Analyze correlated threats in interactive tables
-
-IP Reputation Check
-Enter IP address for comprehensive analysis
-
-View multi-source threat assessment
-
-Access detailed intelligence data
-
-Real-time Dashboard
-Monitor live threat feed
-
-View severity distribution charts
-
-Generate PDF reports
-
-Reporting
-Generate security assessment reports
-
-Export IP reputation analysis
-
-Download professional PDF documents
-
-📁 Project Structure
-csharp
-Copy code
+### 📁 Project Structure
+```
 security-dashboard/
 ├── backend/
 │   ├── app.py                 # Main Flask application
@@ -162,23 +154,28 @@ security-dashboard/
     │       └── api.js         # API service layer
     ├── public/
     └── package.json           # Node.js dependencies
-🔌 API Endpoints
-Endpoint	Method	Description
-/api/login	POST	Generate JWT token
-/api/check-ip	POST	Basic IP reputation check
-/api/enhanced-check-ip	POST	Multi-source IP analysis
-/api/analyze-logs	POST	Process and analyze log files
-/api/generate-security-report	POST	Generate PDF security report
-/api/generate-ip-report	POST	Generate PDF IP report
-/api/health	GET	System status check
+```
+### 🔌 API Endpoints
+| Endpoint                       | Method | Description                     |
+|--------------------------------|--------|---------------------------------|
+| /api/login                     | POST   | Generate JWT token               |
+| /api/check-ip                  | POST   | Basic IP reputation check        |
+| /api/enhanced-check-ip         | POST   | Multi-source IP analysis         |
+| /api/analyze-logs              | POST   | Process and analyze log files    |
+| /api/generate-security-report  | POST   | Generate PDF security report     |
+| /api/generate-ip-report        | POST   | Generate PDF IP report           |
+| /api/health                    | GET    | System status check              |
 
-🤝 Contributing
-Fork the repository
 
-Create a feature branch: git checkout -b feature/amazing-feature
+### 🤝 Contributing
+- Fork the repository
 
-Commit changes: git commit -m 'Add amazing feature'
+- Create a feature branch: git checkout -b feature/amazing-feature
 
-Push to branch: git push origin feature/amazing-feature
+- Commit changes: git commit -m 'Add amazing feature'
 
-Open a Pull Request
+- Push to branch: git push origin feature/amazing-feature
+
+- Open a Pull Request
+
+#Reported by: Ehmaan Shafqat
